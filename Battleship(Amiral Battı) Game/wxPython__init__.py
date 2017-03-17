@@ -17,7 +17,7 @@ class Frame1(wx.Frame):
     def __init__(self, parent, id, title, size, style = wx.DEFAULT_FRAME_STYLE ):
         wx.Frame.__init__(self, parent, id, title, size=size, style=style)
        
-        self.loc = wx.IconLocation(r'/home/muhammed/Desktop/task.ico', 0)
+        self.loc = wx.IconLocation(r'task.ico', 0)
         self.SetIcon(wx.IconFromLocation(self.loc))
         test = TrayIcon()
     
@@ -34,7 +34,7 @@ class Frame1(wx.Frame):
         self.liste = []
         for btn in xrange(225):
             
-            b = wx.BitmapButton(self.panel, btn, wx.Bitmap('/home/muhammed/Desktop/deniz.png'))
+            b = wx.BitmapButton(self.panel, btn, wx.Bitmap('deniz.png'))
             self.liste.append(b)
             b.SetToolTip(wx.ToolTip(str(btn)))
 
@@ -108,7 +108,7 @@ class Frame1(wx.Frame):
             self.SetStatusText("VURULDU    ID:" + str(event.GetId()) )
             self.gemisayac=self.gemisayac+1
             self.skor=int(self.skor+1)
-            self.liste[event.GetId()].SetBitmapLabel(wx.Bitmap('/home/muhammed/Desktop/ship-24.png'))
+            self.liste[event.GetId()].SetBitmapLabel(wx.Bitmap('ship-24.png'))
           
             #print "gemi:",self.gemisayac
             if self.gemisayac==10:
@@ -125,7 +125,7 @@ class Frame1(wx.Frame):
             self.SetStatusText("ORASI BOŞ  ID:"+ str(event.GetId()))
             self.skor=int(self.skor-1)
 
-            self.liste[event.GetId()].SetBitmapLabel(wx.Bitmap('/home/muhammed/Desktop/fire1.png'))
+            self.liste[event.GetId()].SetBitmapLabel(wx.Bitmap('fire1.png'))
 
       
     def cikisf1(self,event):
@@ -137,7 +137,7 @@ class Frame2(wx.Frame):
     def __init__(self, parent, id, title, size, style = wx.DEFAULT_FRAME_STYLE ):
         wx.Frame.__init__(self, parent, id, title, size=size, style=style)
         
-        self.loc = wx.IconLocation(r'/home/muhammed/Desktop/favicon.ico', 0)
+        self.loc = wx.IconLocation(r'favicon.ico', 0)
         
         self.SetIcon(wx.IconFromLocation(self.loc))
 
@@ -182,7 +182,7 @@ class Frame3(wx.Frame):
     def __init__(self, parent, id, title, size, style = wx.DEFAULT_FRAME_STYLE ):
         wx.Frame.__init__(self, parent, id, title, size=size, style=style)
         
-        self.loc = wx.IconLocation(r'/home/muhammed/Desktop/mm.ico', 0)
+        self.loc = wx.IconLocation(r'mm.ico', 0)
        
         self.SetIcon(wx.IconFromLocation(self.loc))
 
@@ -204,7 +204,7 @@ class Frame4(wx.Frame):
     def __init__(self, parent, id, title, size, style = wx.DEFAULT_FRAME_STYLE ):
         wx.Frame.__init__(self, parent, id, title, size=size, style=style)
         
-        self.loc = wx.IconLocation(r'/home/muhammed/Desktop/favicon.ico', 0)
+        self.loc = wx.IconLocation(r'favicon.ico', 0)
         
         self.SetIcon(wx.IconFromLocation(self.loc))
 
@@ -248,7 +248,7 @@ class Frame4(wx.Frame):
 class TrayIcon():
 
     def __init__(self):
-        self.ind = appindicator.Indicator("trayicon","/home/muhammed/Desktop/notfica.png",appindicator.CATEGORY_APPLICATION_STATUS)
+        self.ind = appindicator.Indicator("trayicon","notfica.png",appindicator.CATEGORY_APPLICATION_STATUS)
         self.ind.set_status(appindicator.STATUS_ACTIVE)
         
 
@@ -286,7 +286,7 @@ class StatusBar(wx.StatusBar):
         self.SetStatusText('AMİRAL BATTI AÇILDI :D')
         self.SetStatusWidths([-1, 200])
         
-        self.icon = wx.StaticBitmap(self, bitmap=wx.Bitmap('/home/muhammed/Desktop/deniz.png'))
+        self.icon = wx.StaticBitmap(self, bitmap=wx.Bitmap('deniz.png'))
         self.Bind(wx.EVT_SIZE,self.iconp())
     def iconp(self):
         
@@ -334,7 +334,7 @@ class MainPanel(wx.Panel):
             rect = self.GetUpdateRegion().GetBox()
             dc.SetClippingRect(rect)
         dc.Clear()
-        bmp = wx.Bitmap("/home/muhammed/Desktop/fon1.jpg")
+        bmp = wx.Bitmap("fon1.jpg")
         dc.DrawBitmap(bmp, 0, 0)
 class MainPanel2(wx.Panel):
     
@@ -359,7 +359,7 @@ class MainPanel2(wx.Panel):
             rect = self.GetUpdateRegion().GetBox()
             dc.SetClippingRect(rect)
         dc.Clear()
-        bmp = wx.Bitmap("/home/muhammed/Desktop/p3.jpg")
+        bmp = wx.Bitmap("p3.jpg")
         dc.DrawBitmap(bmp, 0, 0)
 if __name__ == '__main__':
         main()
