@@ -19,4 +19,8 @@ Windows 10 Pro ISO:  https://www.microsoft.com/tr-tr/software-download/windows10
 
 https://drive.google.com/drive/folders/1zTSdnVaWvCQZeAMfRujlcYvGdrp74CfN?usp=sharing
 
+https://halkbank.webex.com/halkbank-tr/j.php?MTID=mb985dee58944fa73104093fbf193e907
+
+
+
 
