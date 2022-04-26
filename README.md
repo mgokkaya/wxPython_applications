@@ -24,6 +24,7 @@ https://halkbank.webex.com/halkbank-tr/j.php?MTID=mb985dee58944fa73104093fbf193e
 https://drive.google.com/drive/folders/1Z3vUEH8PbWxdqAETHM3P8P9n0_j4Er5C
 Halk3441ist
 
+https://drive.google.com/drive/folders/1ZyFtDETTlRFnd3nG0Q1FtePfENQ0ZUWb?usp=sharing
 
 
 
